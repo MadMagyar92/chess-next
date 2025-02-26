@@ -1,0 +1,29 @@
+{
+  "name": "chess-next",
+  "version": "0.0.1",
+  "description": "Next Chess",
+  "main": "index.js",
+  "scripts": {
+    "start": "node submodules/@chess-next-app/app.js",
+    "debug": "DEBUG=app:* npm start",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadMagyar92/chess-next.git"
+  },
+  "keywords": [
+    "chess",
+    "next"
+  ],
+  "author": "MadMagyar92",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/MadMagyar92/chess-next/issues"
+  },
+  "homepage": "https://github.com/MadMagyar92/chess-next#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node": "^18.20.7"
+  }
+}
