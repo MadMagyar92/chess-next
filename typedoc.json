@@ -1,0 +1,9 @@
+{
+    "out": "docs",
+    "exclude": ["**/__tests__", "**/__mocks__"],
+    "excludeExternals": true,
+    "hideGenerator": true,
+    "excludePrivate": true,
+    "name": "Chess Next",
+    "readme": "none"
+}

@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist/es",
+        "declaration": true,
+        "declarationDir": "dist/types"
+    }
+}

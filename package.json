@@ -4,7 +4,8 @@
   "description": "Next Chess",
   "main": "index.js",
   "scripts": {
-    "start": "node submodules/@chess-next-app/app.js",
+    "build": "node build.js",
+    "start": "node dist/app.js",
     "debug": "DEBUG=app:* npm start",
     "test": "test"
   },
@@ -25,5 +26,9 @@
   "dependencies": {
     "express": "^4.21.2",
     "node": "^18.20.7"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "typescript": "^5.7.3"
   }
 }
