@@ -2,6 +2,9 @@
 Chess Next
 
 # next...
+- movement
+- attack service and config
+- attack api
 
 # hard-coded action definitions
 - move type

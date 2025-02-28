@@ -1,10 +1,10 @@
 import { Game } from './game';
 
 interface IGameService {
-getAll(): Game[];
-  get(id: number): Game | undefined;
-  post(game: Game): Game | undefined;
-  delete(id: number): Game | undefined;
+   getAll(): Game[];
+   get(id: number): Game | undefined;
+   post(game: Game): Game | undefined;
+   delete(id: number): Game | undefined;
 }
 
 export class GameService implements IGameService {
