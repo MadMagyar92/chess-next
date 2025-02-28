@@ -1,4 +1,4 @@
-import Game from './game.js';
+import { Game } from './game';
 
 interface GameService {
   get(id: number): Game | undefined;
@@ -6,7 +6,7 @@ interface GameService {
   delete(id: number): Game | undefined;
 }
 
-export default class GameServiceImpl implements GameService {
+export class GameServiceImpl implements GameService {
   private games: Game[];
    
   constructor(games: Game[]) {
