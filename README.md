@@ -2,14 +2,9 @@
 Chess Next
 
 # next...
-- terrain type
-- unit type
-- unit
-- unit map
 
 # hard-coded action definitions
 - move type
-- attack type
 - capture type
 
 # hard-coded object definitions
@@ -19,7 +14,6 @@ Chess Next
 
 # instance action definitions
 - custom move type
-- custom attack type
 
 # instance object definitions (anything outside of a game object)
 - custom terrain grid
