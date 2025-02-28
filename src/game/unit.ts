@@ -12,17 +12,31 @@ export enum UnitType {
 }
  
 interface IUnit {
+   getId(): number;
    getType(): UnitType;
+   isActive(): boolean;
 }
 
 export class Unit implements IUnit {
+   private id: number;
    private type: UnitType;
-      
-   constructor(type: UnitType) {
+   private active: boolean;
+
+   constructor(id: number, type: UnitType, active: boolean) {
+      this.id = id;
       this.type = type;
+      this.active = active;
+   }
+
+   getId(): number {
+      return this.id;
    }
 
    getType(): UnitType {
       return this.type;
+   }
+
+   isActive(): boolean {
+      return this.active;
    }
 }

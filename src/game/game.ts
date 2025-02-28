@@ -3,7 +3,7 @@ import { Unit } from './unit';
 interface IGame {
    getId(): number;
    getMapId(): number;
-   getUnits(): Unit[][];
+   getUnit(x: number, y: number): Unit;
 }
 
 export class Game implements IGame {
@@ -23,7 +23,7 @@ export class Game implements IGame {
       return this.mapId;
    }
 
-   getUnits(): Unit[][] {
-      return this.units;
+   getUnit(x: number, y: number): Unit {
+      return this.units[x][y];
    }
 }
