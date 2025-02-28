@@ -1,4 +1,4 @@
-import Map from './map.js';
+import { Map } from './map';
 
 interface MapService {
   get(id: number): Map | undefined;
@@ -6,7 +6,7 @@ interface MapService {
   delete(id: number): Map | undefined;
 }
    
-export default class MapServiceImpl implements MapService {
+export class MapServiceImpl implements MapService {
   private maps: Map[];
    
   constructor(maps: Map[]) {

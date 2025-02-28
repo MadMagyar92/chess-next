@@ -1,1 +1,1 @@
-export * from './terrain/terrain.js';
+export { Terrain } from './terrain/terrain';
