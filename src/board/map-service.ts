@@ -1,16 +1,21 @@
 import { Map } from './map';
 
-interface MapService {
-  get(id: number): Map | undefined;
-  post(map: Map): Map | undefined;
-  delete(id: number): Map | undefined;
+interface IMapService {
+   getAll(): Map[];
+   get(id: number): Map | undefined;
+   post(map: Map): Map | undefined;
+   delete(id: number): Map | undefined;
 }
-   
-export class MapServiceImpl implements MapService {
+
+export class MapService implements IMapService {
   private maps: Map[];
    
   constructor(maps: Map[]) {
     this.maps = maps;
+  }
+
+  getAll(): Map[] {
+   return this.maps;
   }
 
   get(id: number): Map | undefined {
