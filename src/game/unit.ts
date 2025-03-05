@@ -1,30 +1,19 @@
-export enum UnitType {
-   INF,     // infantry
-   INF_MG,  // infantry with heavy machine gun
-   INF_AV,  // infantry with anti-vehicle rockets
-   ATI,     // all-terrain infantry
-   UTV,     // utility vehicle with heavy machine gun
-   UTV_AV,  // utility vehicle with anti-vehicle rockets
-   MUV,     // medium utility vehicle
-   MUV_AV,  // medium utility vehicle with long range rockets
-   ART,     // artillery
-   ARM,     // armor
-}
- 
+import { UnitConfig } from "../metadata/system/unit";
+
 interface IUnit {
    getId(): number;
-   getType(): UnitType;
+   getConfig(): UnitConfig;
    isActive(): boolean;
 }
 
 export class Unit implements IUnit {
    private id: number;
-   private type: UnitType;
+   private config: UnitConfig;
    private active: boolean;
 
-   constructor(id: number, type: UnitType, active: boolean) {
+   constructor(id: number, config: UnitConfig, active: boolean) {
       this.id = id;
-      this.type = type;
+      this.config = config;
       this.active = active;
    }
 
@@ -32,8 +21,8 @@ export class Unit implements IUnit {
       return this.id;
    }
 
-   getType(): UnitType {
-      return this.type;
+   getConfig(): UnitConfig {
+      return this.config;
    }
 
    isActive(): boolean {

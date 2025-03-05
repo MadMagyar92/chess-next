@@ -1,0 +1,69 @@
+[
+   {
+      "id": "@defense/inf",
+      "config": [
+         { "terrain": "@terrain/und", "defense": 1 },
+         { "terrain": "@terrain/rur", "defense": 0 },
+         { "terrain": "@terrain/sub", "defense": 1 },
+         { "terrain": "@terrain/urb", "defense": 2 },
+         { "terrain": "@terrain/for", "defense": 3 },
+         { "terrain": "@terrain/hil", "defense": 1 },
+         { "terrain": "@terrain/mtn", "defense": 2 }
+      ]
+   },
+   {
+      "id": "@defense/sup",
+      "config": [
+         { "terrain": "@terrain/und", "defense": 1 },
+         { "terrain": "@terrain/rur", "defense": 0 },
+         { "terrain": "@terrain/sub", "defense": 1 },
+         { "terrain": "@terrain/urb", "defense": 2 },
+         { "terrain": "@terrain/for", "defense": 3 },
+         { "terrain": "@terrain/hil", "defense": 1 },
+         { "terrain": "@terrain/mtn", "defense": 2 }
+      ]
+   },
+   {
+      "id": "@defense/atv",
+      "config": [
+         { "terrain": "@terrain/und", "defense": 1 },
+         { "terrain": "@terrain/rur", "defense": 0 },
+         { "terrain": "@terrain/sub", "defense": 1 },
+         { "terrain": "@terrain/urb", "defense": 1 },
+         { "terrain": "@terrain/for", "defense": 2 }
+      ]
+   },
+   {
+      "id": "@defense/utv",
+      "config": [
+         { "terrain": "@terrain/und", "defense": 0 },
+         { "terrain": "@terrain/rur", "defense": 0 },
+         { "terrain": "@terrain/sub", "defense": 0 },
+         { "terrain": "@terrain/urb", "defense": 1 },
+         { "terrain": "@terrain/for", "defense": 2 },
+         { "terrain": "@terrain/hil", "defense": 1 }
+      ]
+   },
+   {
+      "id": "@defense/uav",
+      "config": [
+         { "terrain": "@terrain/und", "defense": 0 },
+         { "terrain": "@terrain/rur", "defense": 0 },
+         { "terrain": "@terrain/sub", "defense": 0 },
+         { "terrain": "@terrain/urb", "defense": 1 },
+         { "terrain": "@terrain/for", "defense": 2 },
+         { "terrain": "@terrain/hil", "defense": 1 }
+      ]
+   },
+   {
+      "id": "@defense/arm",
+      "config": [
+         { "terrain": "@terrain/und", "defense": 0 },
+         { "terrain": "@terrain/rur", "defense": 0 },
+         { "terrain": "@terrain/sub", "defense": 0 },
+         { "terrain": "@terrain/urb", "defense": 0 },
+         { "terrain": "@terrain/for", "defense": 2 },
+         { "terrain": "@terrain/hil", "defense": 0 }
+      ]
+   }
+]

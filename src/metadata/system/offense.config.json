@@ -1,0 +1,72 @@
+[
+   {
+      "id": "@offense/inf",
+      "label": "Rifle",
+      "config": [
+         { "unit": "@unit/inf", "damage": 5 },
+         { "unit": "@unit/sup", "damage": 5 },
+         { "unit": "@unit/atv", "damage": 3 },
+         { "unit": "@unit/utv", "damage": 1 },
+         { "unit": "@unit/uav", "damage": 1 }
+      ]
+   },
+   {
+      "id": "@offense/sup",
+      "label": "Machine Gun",
+      "config": [
+         { "unit": "@unit/inf", "damage": 7 },
+         { "unit": "@unit/sup", "damage": 4 },
+         { "unit": "@unit/atv", "damage": 5 },
+         { "unit": "@unit/utv", "damage": 3 },
+         { "unit": "@unit/uav", "damage": 3 },
+         { "unit": "@unit/arm", "damage": 1 }
+      ]
+   },
+   {
+      "id": "@offense/atv",
+      "label": "Mounted Gun",
+      "config": [
+         { "unit": "@unit/inf", "damage": 5 },
+         { "unit": "@unit/sup", "damage": 3 },
+         { "unit": "@unit/atv", "damage": 3 },
+         { "unit": "@unit/utv", "damage": 1 },
+         { "unit": "@unit/uav", "damage": 1 }
+      ]
+   },
+   {
+      "id": "@offense/utv",
+      "label": "Machine Gun",
+      "config": [
+         { "unit": "@unit/inf", "damage": 7 },
+         { "unit": "@unit/sup", "damage": 4 },
+         { "unit": "@unit/atv", "damage": 5 },
+         { "unit": "@unit/utv", "damage": 3 },
+         { "unit": "@unit/uav", "damage": 3 },
+         { "unit": "@unit/arm", "damage": 1 }
+      ]
+   },
+   {
+      "id": "@offense/uav",
+      "label": "TOW Missle",
+      "config": [
+         { "unit": "@unit/inf", "damage": 5 },
+         { "unit": "@unit/sup", "damage": 6 },
+         { "unit": "@unit/atv", "damage": 5 },
+         { "unit": "@unit/utv", "damage": 8 },
+         { "unit": "@unit/uav", "damage": 8 },
+         { "unit": "@unit/arm", "damage": 6 }
+      ]
+   },
+   {
+      "id": "@offense/arm",
+      "label": "Cannon",
+      "config": [
+         { "unit": "@unit/inf", "damage": 5 },
+         { "unit": "@unit/sup", "damage": 6 },
+         { "unit": "@unit/atv", "damage": 5 },
+         { "unit": "@unit/utv", "damage": 8 },
+         { "unit": "@unit/uav", "damage": 8 },
+         { "unit": "@unit/arm", "damage": 5 }
+      ]
+   }
+]

@@ -1,0 +1,72 @@
+[
+   {
+      "id": "@unit/inf",
+      "label": "Infantry",
+      "movement": "@movement/foo",
+      "offense": "@offense/inf",
+      "defense": "@defense/inf",
+      "actions": [ "@action/cap" ],
+      "fuel": 25,
+      "speed": 3,
+      "ammo": 5,
+      "range": { "min": 1, "max": 1 }
+   },
+   {
+      "id": "@unit/sup",
+      "label": "Heavy Inf.",
+      "movement": "@movement/foo",
+      "offense": "@offense/sup",
+      "defense": "@defense/sup",
+      "actions": [ "@action/cap" ],
+      "fuel": 16,
+      "speed": 2,
+      "ammo": 4,
+      "range": { "min": 1, "max": 1 }
+   },
+   {
+      "id": "@unit/atv",
+      "label": "ATV Inf.",
+      "movement": "@movement/bik",
+      "offense": "@offense/atv",
+      "defense": "@defense/atv",
+      "actions": [ "@action/cap" ],
+      "fuel": 20,
+      "speed": 5,
+      "ammo": 4,
+      "range": { "min": 1, "max": 1 }
+   },
+   {
+      "id": "@unit/utv",
+      "label": "Utility",
+      "movement": "@movement/whe",
+      "offense": "@offense/utv",
+      "defense": "@defense/utv",
+      "fuel": 20,
+      "speed": 4,
+      "ammo": 3,
+      "range": { "min": 1, "max": 1 }
+   },
+   {
+      "id": "@unit/uav",
+      "label": "Anti Utility",
+      "movement": "@movement/whe",
+      "offense": "@offense/uav",
+      "defense": "@defense/uav",
+      "fuel": 12,
+      "speed": 3,
+      "ammo": 3,
+      "range": { "min": 1, "max": 1 }
+   },
+   {
+      "id": "@unit/arm",
+      "label": "Armor",
+      "movement": "@movement/tre",
+      "offense": "@offense/arm",
+      "defense": "@defense/arm",
+      "fuel": 9,
+      "speed": 3,
+      "damage": "arm",
+      "ammo": 2,
+      "range": { "min": 1, "max": 1 }
+   }
+]

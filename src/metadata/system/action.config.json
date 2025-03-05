@@ -1,0 +1,10 @@
+[
+   {
+      "id": "@action/atk",
+      "label": "Attack"
+   },
+   {
+      "id": "@action/cap",
+      "label": "Capture"
+   }
+]
