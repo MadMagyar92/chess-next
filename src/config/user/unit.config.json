@@ -1,0 +1,13 @@
+[
+   {
+      "id": "@unit/user/art",
+      "label": "Artillery",
+      "movement": "@movement/tre",
+      "offense": "@offense/user/art",
+      "defense": "@defense/user/art",
+      "fuel": 15,
+      "speed": 3,
+      "ammo": 2,
+      "range": { "min": 2, "max": 3 }
+   }
+]

@@ -16,5 +16,5 @@ class DefenseConfigItem {
 
 export class DefenseConfig {
    private id: Defense;
-   private config: DefenseConfigItem;
+   private config: DefenseConfigItem[];
 }
