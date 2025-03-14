@@ -1,0 +1,14 @@
+[
+   {
+      "id": "@capture/xpt",
+      "label": "Checkpoint"
+   },
+   {
+      "id": "@capture/bas",
+      "label": "Base"
+   },
+   {
+      "id": "@capture/hqt",
+      "label": "Headquarters"
+   }
+]

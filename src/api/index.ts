@@ -1,2 +1,5 @@
-export { getMapsApi, getMapApi, getTerrainFromMapApi } from './map-api.js';
-export { getGamesApi, getGameApi, getUnitFromGameApi, getMovesForUnitFromGameApi } from './game-api.js';
+export { IGame } from './game.js';
+export { ICaptureGrid, ITerrainGrid, IUnitGrid } from './grid.js';
+export { IService } from './service.js';
+export { Id, IStoreable } from './storeable.js';
+export { IGameTemplate } from './template.js';

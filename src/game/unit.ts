@@ -1,4 +1,4 @@
-import { UnitConfig } from "../metadata/system/unit";
+import { UnitConfig } from "../schema/config/unit";
 
 interface IUnit {
    getId(): number;

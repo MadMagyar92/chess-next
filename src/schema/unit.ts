@@ -2,14 +2,18 @@ import { Movement } from "./movement";
 import { Offense } from "./offense";
 import { Defense } from "./defense";
 
-export enum Unit {
-   INF,  // infantry
-   SUP,  // support infantry
-   ATV,  // all-terrain infantry
-   UTV,  // utility vehicle
-   UAV,  // offensive utility 
-   ARM   // armor
+export enum SystemUnit {
+   INF = '@unit/inf',  // infantry
+   SUP = '@unit/sup',  // support infantry
+   ATV = '@unit/atv',  // all-terrain infantry
+   UTV = '@unit/utv',  // utility vehicle
+   UAV = '@unit/uav',  // offensive utility 
+   ARM = '@unit/arm'   // armor
 }
+
+export type CustomUnit = string;
+
+export type Unit = SystemUnit | CustomUnit;
 
 class Range {
    private min: number;
@@ -18,6 +22,7 @@ class Range {
 
 export class UnitConfig {
    private id: Unit;
+   private label: string;
    private movement: Movement;
    private offense: Offense;
    private defense: Defense;

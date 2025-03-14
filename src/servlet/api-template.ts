@@ -1,5 +1,6 @@
+import { IGameTemplate } from '../api';
 import { CoreService } from '../core-service';
-import { Map, TerrainType } from '../map';
+import { Terrain } from '../schema';
 
 export function getMapsApi(coreService: CoreService) {
    return (req, res) => {
@@ -10,7 +11,7 @@ export function getMapsApi(coreService: CoreService) {
 export function getMapApi(coreService: CoreService) {
    return (req, res) => {
       const { params: { mapId }} = req;
-      const map: Map = coreService.map().get(mapId);
+      const map: ITerrainGrid = coreService.map().get(mapId);
       if (!map) {
          res.sendStatus(404);
       }
@@ -21,11 +22,11 @@ export function getMapApi(coreService: CoreService) {
 export function getTerrainFromMapApi(coreService: CoreService) {
    return (req, res) => {
       const { params: { mapId, x, y }} = req;
-      const map: Map = coreService.map().get(mapId);
+      const map: IGameTemplate = coreService.map().get(mapId);
       if (!map) {
          res.sendStatus(404);
       }
-      const terrain: TerrainType = map.get(x, y);
+      const terrain: Terrain = map.get(x, y);
       if (!terrain) {
          res.sendStatus(404);
       }
