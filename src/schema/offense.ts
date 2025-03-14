@@ -13,13 +13,15 @@ type CustomOffense = string;
 
 export type Offense = SystemOffense | CustomOffense;
 
-class OffenseConfigItem {
+class OffenseDamageConfigItem {
    private unit: Unit;
    private damage: number;
 }
 
-export class OffenseConfig {
+class OffenseConfigItem {
    private id: Offense;
    private label: string;
-   private config: OffenseConfigItem[];
+   private config: OffenseDamageConfigItem[];
 }
+
+export type OffenseConfig = OffenseConfigItem[];

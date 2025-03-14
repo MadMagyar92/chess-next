@@ -13,12 +13,14 @@ type CustomDefense = string;
 
 export type Defense = SystemDefense | CustomDefense;
 
-class DefenseConfigItem {
+class DefenseBonusConfigItem {
    private terrain: Terrain;
    private defense: number;
 }
 
-export class DefenseConfig {
+class DefenseConfigItem {
    private id: Defense;
-   private config: DefenseConfigItem[];
+   private config: DefenseBonusConfigItem[];
 }
+
+export type DefenseConfig = DefenseConfigItem[];

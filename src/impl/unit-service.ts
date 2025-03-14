@@ -1,4 +1,4 @@
-import { Unit } from './unit';
+import { Unit } from '../game/unit';
 
 interface IUnitService {
   get(x: number, y: number): Unit | undefined;

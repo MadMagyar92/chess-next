@@ -1,0 +1,40 @@
+{
+   "name": "chess-next",
+   "schemas": [
+      {
+         "schema": "@schema/action",
+         "namespace": "@action",
+         "path": "./action.config.json"
+      },
+      {
+         "schema": "@schema/capture",
+         "namespace": "@capture",
+         "path": "./capture.config.json"
+      },
+      {
+         "schema": "@schema/defense",
+         "namespace": "@defense",
+         "path": "./defense.config.json"
+      },
+      {
+         "schema": "@schema/movement",
+         "namespace": "@movement",
+         "path": "./movement.config.json"
+      },
+      {
+         "schema": "@schema/offense",
+         "namespace": "@offense",
+         "path": "./offense.config.json"
+      },
+      {
+         "schema": "@schema/terrain",
+         "namespace": "@terrain",
+         "path": "./terrain.config.json"
+      },
+      {
+         "schema": "@schema/unit",
+         "namespace": "@unit",
+         "path": "./unit.config.json"
+      }
+   ]
+}

@@ -8,7 +8,9 @@ type CustomCapture = string;
 
 export type Capture = SystemCapture | CustomCapture;
 
-export class CaptureConfig {
+class CaptureConfigItem {
    private id: Capture;
    private label: string;
 }
+
+export type CaptureConfig = CaptureConfigItem[];

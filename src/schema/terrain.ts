@@ -12,7 +12,9 @@ type CustomTerrain = string;
 
 export type Terrain = SystemTerrain | CustomTerrain;
 
-export class TerrainConfig {
+class TerrainConfigItem {
    private id: Terrain;
    private label: string;
 }
+
+export type TerrainConfig = TerrainConfigItem[];

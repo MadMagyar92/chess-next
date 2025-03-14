@@ -1,4 +1,4 @@
-import { IGameTemplate } from '../api';
+import { IGameTemplate, ITerrainGrid } from '../api';
 import { CoreService } from '../core-service';
 import { Terrain } from '../schema';
 

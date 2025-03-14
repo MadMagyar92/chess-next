@@ -11,13 +11,15 @@ type CustomMovement = string;
 
 export type Movement = SystemMovement | CustomMovement;
 
-class MovementConfigItem {
+class MovementCostConfigItem {
    private terrain: Terrain;
    private fuel: number;
 }
 
-export class MovementConfig {
+class MovementConfigItem {
    private id: Movement;
    private label: string;
-   private config: MovementConfigItem[];
+   private config: MovementCostConfigItem[];
 }
+
+export type MovementConfig = MovementConfigItem[];

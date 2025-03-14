@@ -3,6 +3,8 @@
         "rootDir": "src",
         "outDir": "dist/es",
         "declaration": true,
-        "declarationDir": "dist/types"
+        "declarationDir": "dist/types",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     }
 }

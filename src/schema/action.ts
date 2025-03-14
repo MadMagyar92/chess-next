@@ -7,7 +7,9 @@ type CustomAction = string;
 
 export type Action = SystemAction | CustomAction;
 
-export class ActionConfig {
+class ActionConfigItem {
    private type: Action;
    private label: string;
 }
+
+export type ActionConfig = ActionConfigItem[];
