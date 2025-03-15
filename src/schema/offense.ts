@@ -1,6 +1,6 @@
 import { Unit } from "./unit";
 
-enum SystemOffense {
+export enum SystemOffense {
    INF = '@offense/inf',  // rifle
    SUP = '@offense/sup',  // machine gun
    ATV = '@offense/atv',  // machine gun
@@ -9,19 +9,19 @@ enum SystemOffense {
    ARM = '@offense/arm'   // cannon
 }
 
-type CustomOffense = string;
+export type CustomOffense = string;
 
 export type Offense = SystemOffense | CustomOffense;
 
-class OffenseDamageConfigItem {
-   private unit: Unit;
-   private damage: number;
+export class OffenseDamageConfigItem {
+   unit: Unit;
+   damage: number;
 }
 
-class OffenseConfigItem {
-   private id: Offense;
-   private label: string;
-   private config: OffenseDamageConfigItem[];
+export class OffenseConfigItem {
+   id: Offense;
+   label: string;
+   config: OffenseDamageConfigItem[];
 }
 
 export type OffenseConfig = OffenseConfigItem[];

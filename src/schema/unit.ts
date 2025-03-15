@@ -15,19 +15,19 @@ export type CustomUnit = string;
 
 export type Unit = SystemUnit | CustomUnit;
 
-class Range {
-   private min: number;
-   private max: number;
+export class Range {
+   min: number;
+   max: number;
 }
 
 export class UnitConfig {
-   private id: Unit;
-   private label: string;
-   private movement: Movement;
-   private offense: Offense;
-   private defense: Defense;
-   private fuel: number;
-   private speed: number;
-   private ammo: number;
-   private range: Range;
+   id: Unit;
+   label: string;
+   movement: Movement;
+   offense: Offense;
+   defense: Defense;
+   fuel: number;
+   speed: number;
+   ammo: number;
+   range: Range;
 }

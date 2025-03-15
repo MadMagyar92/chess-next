@@ -1,20 +1,22 @@
-import { Capture, Terrain, Unit } from "../schema";
+import { ICapture } from "./capture";
 import { IStoreable } from "./storeable";
+import { ITerrain } from "./terrain";
+import { IUnit } from "./unit";
 
-interface IGrid<T> {
+interface IGrid<T> extends IStoreable {
    getSizeX(): number;
    getSizeY(): number;
    get(x: number, y: number): T | undefined;
 }
 
-export interface ITerrainGrid extends IGrid<Terrain>, IStoreable {
+export interface ITerrainGrid extends IGrid<ITerrain> {
 
 }
 
-export interface ICaptureGrid extends IGrid<Capture>, IStoreable {
+export interface ICaptureGrid extends IGrid<ICapture> {
 
 }
 
-export interface IUnitGrid extends IGrid<Unit>, IStoreable {
+export interface IUnitGrid extends IGrid<IUnit> {
 
 }

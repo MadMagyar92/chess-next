@@ -3,6 +3,25 @@ import { Game, GameService, Unit } from '../game';
 import { Map } from '../map';
 import { CoreService } from '../core-service';
 
+const gameMappings = [
+   {
+      path: '/api/game',
+      service: getGamesApi(coreService)
+   },
+   {
+      path: '/api/game/:gameId',
+      service: getGameApi(coreService)
+   },
+   {
+      path: '/api/game/:gameId/unit/:x/:y',
+      service: getUnitFromGameApi(coreService)
+   },
+   {
+      path: '/api/game/:gameId/unit/:x/:y/moves',
+      service: getMovesForUnitFromGameApi(coreService)
+   }
+];
+
 export class GameApi {
    service: GameService;
 

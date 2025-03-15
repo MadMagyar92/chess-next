@@ -1,38 +1,38 @@
 {
    "name": "chess-next",
-   "schemas": [
+   "configs": [
       {
-         "schema": "@schema/action",
+         "metadata": "@metadata/action",
          "namespace": "@action",
          "path": "./action.config.json"
       },
       {
-         "schema": "@schema/capture",
+         "metadata": "@metadata/capture",
          "namespace": "@capture",
          "path": "./capture.config.json"
       },
       {
-         "schema": "@schema/defense",
+         "metadata": "@metadata/defense",
          "namespace": "@defense",
          "path": "./defense.config.json"
       },
       {
-         "schema": "@schema/movement",
+         "metadata": "@metadata/movement",
          "namespace": "@movement",
          "path": "./movement.config.json"
       },
       {
-         "schema": "@schema/offense",
+         "metadata": "@metadata/offense",
          "namespace": "@offense",
          "path": "./offense.config.json"
       },
       {
-         "schema": "@schema/terrain",
+         "metadata": "@metadata/terrain",
          "namespace": "@terrain",
          "path": "./terrain.config.json"
       },
       {
-         "schema": "@schema/unit",
+         "metadata": "@metadata/unit",
          "namespace": "@unit",
          "path": "./unit.config.json"
       }

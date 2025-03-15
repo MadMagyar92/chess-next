@@ -1,19 +1,16 @@
-import { UnitConfig } from "../schema/config/unit";
+import { IUnit } from "../api";
+import { UnitConfig } from "../schema";
 
-interface IUnit {
-   getId(): number;
-   getConfig(): UnitConfig;
-   isActive(): boolean;
-}
-
-export class Unit implements IUnit {
+export class UnitImpl implements IUnit {
    private id: number;
    private config: UnitConfig;
+   private team: number;
    private active: boolean;
 
-   constructor(id: number, config: UnitConfig, active: boolean) {
+   constructor(id: number, config: UnitConfig, team: number, active: boolean) {
       this.id = id;
       this.config = config;
+      this.team = team;
       this.active = active;
    }
 
@@ -23,6 +20,10 @@ export class Unit implements IUnit {
 
    getConfig(): UnitConfig {
       return this.config;
+   }
+
+   getTeam(): number {
+      throw this.team;
    }
 
    isActive(): boolean {

@@ -1,4 +1,10 @@
+import { Metadata } from "../schema";
 import { Id, IStoreable } from "./storeable";
+
+export interface IMetadataService<T> {
+   getType(): Metadata;
+   getConfig(): T;
+}
 
 export interface IService<T extends IStoreable> {
    getAll(): T[];

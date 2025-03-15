@@ -1,6 +1,6 @@
-import { ICaptureGrid, IGame, ITerrainGrid, IUnitGrid, Id } from '../api';
+import { ICaptureGrid, IGameTemplate, ITerrainGrid, IUnitGrid, Id } from '../api';
 
-export class GameImpl implements IGame {
+export class GameTemplateImpl implements IGameTemplate {
    private id: Id;
    private terrain: ITerrainGrid;
    private capture: ICaptureGrid;

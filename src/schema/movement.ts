@@ -1,25 +1,25 @@
 import { Terrain } from "./terrain";
 
-enum SystemMovement {
+export enum SystemMovement {
    FOO = '@movement/foo',  // foot
    BIK = '@movement/bik',  // bike
    WHE = '@movement/whe',  // wheel
    TRE = '@movement/tre'   // tread
 }
 
-type CustomMovement = string;
+export type CustomMovement = string;
 
 export type Movement = SystemMovement | CustomMovement;
 
-class MovementCostConfigItem {
-   private terrain: Terrain;
-   private fuel: number;
+export class MovementCostConfigItem {
+   terrain: Terrain;
+   fuel: number;
 }
 
-class MovementConfigItem {
-   private id: Movement;
-   private label: string;
-   private config: MovementCostConfigItem[];
+export class MovementConfigItem {
+   id: Movement;
+   label: string;
+   config: MovementCostConfigItem[];
 }
 
 export type MovementConfig = MovementConfigItem[];

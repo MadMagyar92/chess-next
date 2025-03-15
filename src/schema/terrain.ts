@@ -1,4 +1,4 @@
-enum SystemTerrain {
+export enum SystemTerrain {
    UND = '@terrain/und', // undeveloped
    RUR = '@terrain/rur', // rural
    SUB = '@terrain/sub', // suburban
@@ -8,13 +8,13 @@ enum SystemTerrain {
    MTN = '@terrain/mtn'  // mountains
 }
 
-type CustomTerrain = string;
+export type CustomTerrain = string;
 
 export type Terrain = SystemTerrain | CustomTerrain;
 
-class TerrainConfigItem {
-   private id: Terrain;
-   private label: string;
+export class TerrainConfigItem {
+   id: Terrain;
+   label: string;
 }
 
 export type TerrainConfig = TerrainConfigItem[];

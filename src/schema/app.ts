@@ -1,24 +1,21 @@
-enum SystemSchema {
-   ACTION = '@schema/action',
-   CAPTURE = '@schema/capture',
-   DEFENSE = '@schema/defense',
-   MOVEMENT = '@schema/movement',
-   OFFENSE = '@schema/offense',
-   TERRAIN = '@schema/terrain',
-   UNIT = '@schema/unit',
+export enum Metadata {
+   ACTION = '@metadata/action',
+   CAPTURE = '@metadata/capture',
+   DEFENSE = '@metadata/defense',
+   MOVEMENT = '@metadata/movement',
+   OFFENSE = '@metadata/offense',
+   TERRAIN = '@metadata/terrain',
+   UNIT = '@metadata/unit',
 }
 
-type CustomSchema = string;
-
-export type AppSchema = SystemSchema | CustomSchema;
-
-class AppSchemaConfigItem {
-   private schema: AppSchema;
-   private namespace: string;
-   private path: string;
+export class MetadataConfigItem {
+   metadata: Metadata;
+   path: string;
 }
 
-export class AppSchemaConfig {
-   private name: string;
-   private schemas: AppSchemaConfigItem[];
+export type MetadataConfig = MetadataConfigItem[];
+
+export class AppConfig {
+   name: string;
+   configs: MetadataConfig;
 }

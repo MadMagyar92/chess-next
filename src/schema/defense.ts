@@ -1,6 +1,6 @@
 import { Terrain } from "./terrain";
 
-enum SystemDefense {
+export enum SystemDefense {
    INF = '@defense/inf',  // infantry
    SUP = '@defense/sup',  // support infantry
    ATV = '@defense/atv',  // all-terrain infantry
@@ -9,18 +9,18 @@ enum SystemDefense {
    ARM = '@defense/arm'   // armor
 }
 
-type CustomDefense = string;
+export type CustomDefense = string;
 
 export type Defense = SystemDefense | CustomDefense;
 
-class DefenseBonusConfigItem {
-   private terrain: Terrain;
-   private defense: number;
+export class DefenseBonusConfigItem {
+   terrain: Terrain;
+   defense: number;
 }
 
-class DefenseConfigItem {
-   private id: Defense;
-   private config: DefenseBonusConfigItem[];
+export class DefenseConfigItem {
+   id: Defense;
+   config: DefenseBonusConfigItem[];
 }
 
 export type DefenseConfig = DefenseConfigItem[];
