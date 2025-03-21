@@ -1,3 +1,4 @@
+import { IMetadata, Metadata } from "../app/metadata";
 import { Terrain } from "./terrain";
 
 export enum SystemMovement {
@@ -8,18 +9,21 @@ export enum SystemMovement {
 }
 
 export type CustomMovement = string;
-
 export type Movement = SystemMovement | CustomMovement;
 
-export class MovementCostConfigItem {
+export type TerrainFuelConfigItem = {
    terrain: Terrain;
    fuel: number;
 }
 
-export class MovementConfigItem {
+export type TerrainFuelConfig = TerrainFuelConfigItem[];
+
+export type MovementMetadataItem = {
    id: Movement;
    label: string;
-   config: MovementCostConfigItem[];
+   config: TerrainFuelConfig;
 }
 
-export type MovementConfig = MovementConfigItem[];
+export class MovementMetadata extends Array<MovementMetadataItem> implements IMetadata {
+   type: Metadata.MOVEMENT;
+}

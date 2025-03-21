@@ -1,5 +1,6 @@
+import { ITerrainMetadataService } from './api/service-metadata';
 import { GameService } from './game';
-import { CaptureConfig, Metadata, Terrain, TerrainConfig, UnitConfig } from './schema';
+import { CaptureConfig, Metadata, Terrain, TerrainMetadata, UnitMetadata } from './schema';
 import { GameTemplateService } from './template';
 
 const metadataMap = [
@@ -22,7 +23,7 @@ interface MService<T> {
    getConfig(): T;
 }
 
-interface TerrainService extends MService<TerrainConfig> {
+interface TerrainService extends MService<TerrainMetadata> {
    
 }
 
@@ -30,12 +31,12 @@ interface CaptureService extends MService<CaptureConfig> {
    
 }
 
-interface UnitService extends MService<UnitConfig> {
+interface UnitService extends MService<UnitMetadata> {
    
 }
 
-interface IMetadataService {
-   terrain(): TerrainService;
+interface IConfigService {
+   terrain(): ITerrainMetadataService;
    capture(): CaptureService;
    unit(): UnitService;
 }

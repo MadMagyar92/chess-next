@@ -1,8 +1,7 @@
-export { ICapture } from './capture.js';
-export { IGame } from './game.js';
-export { ICaptureGrid, ITerrainGrid, IUnitGrid } from './grid.js';
-export { IService } from './service.js';
-export { Id, IStoreable } from './storeable.js';
-export { IGameTemplate } from './template.js';
-export { ITerrain } from './terrain.js';
-export { IUnit } from './unit.js';
+export { IDataService } from './common/data';
+export { IMetadataService } from './common/metadata';
+export { IDefenseMetadataService } from './metadata/defense';
+export { IMovementMetadataService } from './metadata/movement';
+export { IOffenseMetadataService } from './metadata/offense';
+export { ITerrainMetadataService } from './metadata/terrain';
+export { IUnitMetadataService } from './metadata/unit';

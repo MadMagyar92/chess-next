@@ -1,37 +1,35 @@
-import { IService, IUnit, IUnitGrid, Id } from '../api';
+import { IUnit, IUnitMetadataService } from '../api';
+import { Defense, Metadata, Movement, Offense, Unit, UnitMetadata } from '../schema';
+import { UnitMetadataItem } from '../schema/metadata/unit';
+import { AbstractDataService, AbstractMetadataService } from './service';
 
-export class UnitService implements IService<IUnit>, IUnitGrid {
-   private units: IUnit[];
-   private unitMaps: IUnit[][];
-   
-   constructor(units: IUnit[], unitMaps: IUnit[][]) {
-      this.units = units;
-      this.unitMaps = unitMaps;
+export class UnitMetadataService extends AbstractMetadataService<UnitMetadata> implements IUnitMetadataService {
+   constructor(config: UnitMetadata) {
+      super(Metadata.UNIT, config);
    }
 
-   getAll(): IUnit[] {
-      return this.units;
+   getMovement(unit: Unit): Movement {
+      const { movement } = this.getUnit(unit);
+      return movement;
    }
 
-   get(id: Id): IUnit | undefined {
-      const result: IUnit[] = this.units.filter(g => g.getId() == id);
-      return result.length == 1 ? result[0] : undefined;
+   getOffense(unit: Unit): Offense {
+      const { offense } = this.getUnit(unit);
+      return offense;
    }
 
-   create(unit: IUnit): Id {
-      this.units.push(unit);
-      return unit.getId();
+   getDefense(unit: Unit): Defense {
+      const { defense } = this.getUnit(unit);
+      return defense;
    }
 
-   post(unit: IUnit): IUnit | undefined {
-      return unit;
+   getUnit(unit: Unit): UnitMetadataItem {
+      return this.getConfig().filter(({id}) => id == unit)[0];
    }
+}
 
-   delete(id: number): IUnit | undefined {
-      return this.get(id);
-   }
-
-   get(x: number, y: number): IUnit | undefined {
-      return this.unitMaps[x][y];
+export class UnitDataService extends AbstractDataService<IUnit> {   
+   constructor(units: IUnit[]) {
+      super(units);
    }
 }

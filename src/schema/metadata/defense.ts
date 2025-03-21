@@ -1,3 +1,4 @@
+import { IMetadata, Metadata } from "../app/metadata";
 import { Terrain } from "./terrain";
 
 export enum SystemDefense {
@@ -10,17 +11,20 @@ export enum SystemDefense {
 }
 
 export type CustomDefense = string;
-
 export type Defense = SystemDefense | CustomDefense;
 
-export class DefenseBonusConfigItem {
+export type TerrainDefenseMetadataItem = {
    terrain: Terrain;
    defense: number;
-}
+};
 
-export class DefenseConfigItem {
+export type TerrainDefenseMetadata = TerrainDefenseMetadataItem[];
+
+export type DefenseMetadataItem = {
    id: Defense;
-   config: DefenseBonusConfigItem[];
-}
+   config: TerrainDefenseMetadata;
+};
 
-export type DefenseConfig = DefenseConfigItem[];
+export class DefenseMetadata extends Array<DefenseMetadataItem> implements IMetadata {
+   type: Metadata.DEFENSE;
+}

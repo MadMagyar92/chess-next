@@ -1,3 +1,4 @@
+import { IMetadata, Metadata } from "../app/metadata";
 import { Unit } from "./unit";
 
 export enum SystemOffense {
@@ -10,18 +11,21 @@ export enum SystemOffense {
 }
 
 export type CustomOffense = string;
-
 export type Offense = SystemOffense | CustomOffense;
 
-export class OffenseDamageConfigItem {
+export type UnitDamageMetadataItem = {
    unit: Unit;
    damage: number;
-}
+};
 
-export class OffenseConfigItem {
+export type UnitDamageMetadata = UnitDamageMetadataItem[];
+
+export type OffenseMetadataItem = {
    id: Offense;
    label: string;
-   config: OffenseDamageConfigItem[];
-}
+   config: UnitDamageMetadata;
+};
 
-export type OffenseConfig = OffenseConfigItem[];
+export class OffenseMetadata extends Array<OffenseMetadataItem> implements IMetadata {
+   type: Metadata.OFFENSE;
+}

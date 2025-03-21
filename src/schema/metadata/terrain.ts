@@ -1,3 +1,5 @@
+import { IMetadata, Metadata } from "../app/metadata";
+
 export enum SystemTerrain {
    UND = '@terrain/und', // undeveloped
    RUR = '@terrain/rur', // rural
@@ -9,12 +11,13 @@ export enum SystemTerrain {
 }
 
 export type CustomTerrain = string;
-
 export type Terrain = SystemTerrain | CustomTerrain;
 
-export class TerrainConfigItem {
+export type TerrainMetadataItem = {
    id: Terrain;
    label: string;
-}
+};
 
-export type TerrainConfig = TerrainConfigItem[];
+export class TerrainMetadata extends Array<TerrainMetadataItem> implements IMetadata {
+   type: Metadata.TERRAIN;
+}

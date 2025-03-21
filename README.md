@@ -1,33 +1,23 @@
 # chess-next
 Chess Next
 
+# finished recently...
+- schema organization
+   - app > metadata > data > runtime
+- api organization
+   - common > metadata > data > runtime
+
 # next...
-- movement
-- attack service and config
-- attack api
+- impl organization
+   - core > metadata > data > runtime
+   - data handlers
+   - runtime objects
 
-# hard-coded action definitions
-- move type
-- capture type
+# metadata
+Configurations like for base stats, terrain bonuses, and damage assignments. These can be extended from the base metadata.
 
-# hard-coded object definitions
-- terrain grid
-- terrain type
-- unit type
+# data
+Storeable data like for unit health and positioning.
 
-# instance action definitions
-- custom move type
-
-# instance object definitions (anything outside of a game object)
-- custom terrain grid
-- custom unit type
-- custom terrain type
-
-# instance action data
-- move
-- attack
-- capture
-
-# instance object data (anything belonging to a game object)
-- game
-- unit
+# runtime
+Transformational objects like for moves or attacks.

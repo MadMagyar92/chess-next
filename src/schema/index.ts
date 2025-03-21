@@ -1,8 +1,8 @@
-export { Action, ActionConfig } from './action.js';
-export { Metadata, MetadataConfigItem, AppConfig } from './app.js';
-export { Capture, CaptureConfig } from './capture.js';
-export { Defense, DefenseConfig } from './defense.js';
-export { Movement, MovementConfig } from './movement.js';
-export { Offense, OffenseConfig } from './offense.js';
-export { Terrain, TerrainConfig } from './terrain.js';
-export { Unit, UnitConfig } from './unit.js';
+export { AppConfig } from './app/app.js';
+export { Metadata, IMetadata } from './app/metadata.js';
+export { IData, Id } from './app/data.js';
+export { Defense, DefenseMetadata } from './metadata/defense.js';
+export { Movement, MovementMetadata } from './metadata/movement.js';
+export { Offense, OffenseMetadata } from './metadata/offense.js';
+export { Terrain, TerrainMetadata } from './metadata/terrain.js';
+export { Unit, UnitMetadata } from './metadata/unit.js';

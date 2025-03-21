@@ -1,7 +1,7 @@
 import * as fs from 'fs';
-import { ActionConfig, AppConfig, CaptureConfig, DefenseConfig, Metadata, MetadataConfigItem, MovementConfig, OffenseConfig, TerrainConfig, UnitConfig } from "../schema";
+import { ActionConfig, AppConfig, CaptureConfig, DefenseMetadata, Metadata, MetadataConfigItem, MovementMetadata, OffenseMetadata, TerrainMetadata, UnitMetadata } from "../schema";
 
-type MetadataConfig = ActionConfig | CaptureConfig | DefenseConfig | MovementConfig | OffenseConfig | TerrainConfig | UnitConfig;
+type MetadataConfig = ActionConfig | CaptureConfig | DefenseMetadata | MovementMetadata | OffenseMetadata | TerrainMetadata | UnitMetadata;
 
 class MetadataConfigEntry {
    key: Metadata;

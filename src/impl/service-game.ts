@@ -1,31 +1,8 @@
-import { IGame, Id, IService } from '../api';
+import { IGame } from '../api';
+import { AbstractDataService } from './service';
 
-export class GameService implements IService<IGame> {
-   private games: IGame[];
-      
+export class GameDataService extends AbstractDataService<IGame> {   
    constructor(games: IGame[]) {
-      this.games = games;
-   }
-
-   getAll(): IGame[] {
-      return this.games;
-   }
-
-   get(id: Id): IGame | undefined {
-      const result: IGame[] = this.games.filter(g => g.getId() == id);
-      return result.length == 1 ? result[0] : undefined;
-   }
-   
-   create(game: IGame): Id {
-      this.games.push(game);
-      return game.getId();
-   }
-
-   post(game: IGame): IGame | undefined {
-      return game;
-   }
-
-   delete(id: number): IGame | undefined {
-      return this.get(id);
+      super(games);
    }
 }
