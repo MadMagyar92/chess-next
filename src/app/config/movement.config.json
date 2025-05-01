@@ -1,6 +1,6 @@
 [
    {
-      "id": "@movement/foo",
+      "id": "foo",
       "label": "Foot",
       "config": [
          { "terrain": "@terrain/und", "fuel": 1 },
@@ -13,7 +13,7 @@
       ]
    },
    {
-      "id": "@movement/bik",
+      "id": "bik",
       "label": "Bike",
       "config": [
          { "terrain": "@terrain/und", "fuel": 2 },
@@ -24,7 +24,7 @@
       ]
    },
    {
-      "id": "@movement/whe",
+      "id": "whe",
       "label": "Wheel",
       "config": [
          { "terrain": "@terrain/und", "fuel": 1 },
@@ -36,7 +36,7 @@
       ]
    },
    {
-      "id": "@movement/tre",
+      "id": "tre",
       "label": "Tread",
       "config": [
          { "terrain": "@terrain/und", "fuel": 1 },

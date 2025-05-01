@@ -1,6 +1,6 @@
 [
    {
-      "id": "@offense/inf",
+      "id": "inf",
       "label": "Rifle",
       "config": [
          { "unit": "@unit/inf", "damage": 5 },
@@ -11,7 +11,7 @@
       ]
    },
    {
-      "id": "@offense/sup",
+      "id": "sup",
       "label": "Machine Gun",
       "config": [
          { "unit": "@unit/inf", "damage": 7 },
@@ -23,7 +23,7 @@
       ]
    },
    {
-      "id": "@offense/atv",
+      "id": "atv",
       "label": "Mounted Gun",
       "config": [
          { "unit": "@unit/inf", "damage": 5 },
@@ -34,7 +34,7 @@
       ]
    },
    {
-      "id": "@offense/utv",
+      "id": "utv",
       "label": "Machine Gun",
       "config": [
          { "unit": "@unit/inf", "damage": 7 },
@@ -46,7 +46,7 @@
       ]
    },
    {
-      "id": "@offense/uav",
+      "id": "uav",
       "label": "TOW Missle",
       "config": [
          { "unit": "@unit/inf", "damage": 5 },
@@ -58,7 +58,7 @@
       ]
    },
    {
-      "id": "@offense/arm",
+      "id": "arm",
       "label": "Cannon",
       "config": [
          { "unit": "@unit/inf", "damage": 5 },
