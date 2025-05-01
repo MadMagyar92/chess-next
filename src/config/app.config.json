@@ -1,0 +1,30 @@
+{
+   "name": "chess-next",
+   "configs": [
+      {
+         "metadata": "@metadata/defense",
+         "namespace": "@defense",
+         "path": "./defense.config.json"
+      },
+      {
+         "metadata": "@metadata/movement",
+         "namespace": "@movement",
+         "path": "./movement.config.json"
+      },
+      {
+         "metadata": "@metadata/offense",
+         "namespace": "@offense",
+         "path": "./offense.config.json"
+      },
+      {
+         "metadata": "@metadata/terrain",
+         "namespace": "@terrain",
+         "path": "./terrain.config.json"
+      },
+      {
+         "metadata": "@metadata/unit",
+         "namespace": "@unit",
+         "path": "./unit.config.json"
+      }
+   ]
+}

@@ -1,33 +1,59 @@
-import { MoveService } from './action';
+import { ITerrainMetadataService } from './api/service-metadata';
 import { GameService } from './game';
-import { MapService } from './map';
+import { CaptureConfig, Metadata, Terrain, TerrainMetadata, UnitMetadata } from './schema';
+import { GameTemplateService } from './template';
+
+const metadataMap = [
+   {
+      metadata: Metadata.TERRAIN, 
+      config: getConfig()
+   },
+   {
+      metadata: Metadata.UNIT, 
+      config: getConfig()
+   },
+];
+
+interface IConfigService {
+   terrain(): ITerrainMetadataService;
+   capture(): CaptureService;
+   unit(): UnitService;
+}
+
+interface IDataService {
+   template(): GameTemplateService;
+   game(): GameService;
+}
 
 interface ICoreService {
+   template(): GameTemplateService;
    game(): GameService;
-   map(): MapService;
-   move(gameId: number): MoveService;
 }
 
 export class CoreService implements ICoreService {
+   private templateService: GameTemplateService;
    private gameService: GameService;
-   private mapService: MapService;
 
    constructor() {
+      this.templateService = new GameTemplateService([]);
       this.gameService = new GameService([]);
-      this.mapService = new MapService([]);
+   }
+
+   template(): GameTemplateService {
+      return this.templateService;
    }
 
    game(): GameService {
       return this.gameService;
    }
+}
 
-   map(): MapService {
-      return this.mapService;
-   }
+interface ICoreHandler {
+   template(): GameTemplateService;
+   game(): GameService;
+}
 
-   move(gameId: number): MoveService {
-      const g = this.game().get(gameId);
-      const m = this.map().get(g.getMapId());
-      return new MoveService(g, m);
-   }
+export class CoreHandler implements ICoreHandler {
+   private moveService: MoveService;
+
 }

@@ -1,0 +1,50 @@
+[
+   {
+      "id": "@movement/foo",
+      "label": "Foot",
+      "config": [
+         { "terrain": "@terrain/und", "fuel": 1 },
+         { "terrain": "@terrain/rur", "fuel": 1 },
+         { "terrain": "@terrain/sub", "fuel": 2 },
+         { "terrain": "@terrain/urb", "fuel": 2 },
+         { "terrain": "@terrain/for", "fuel": 2 },
+         { "terrain": "@terrain/hil", "fuel": 2 },
+         { "terrain": "@terrain/mtn", "fuel": 3 }
+      ]
+   },
+   {
+      "id": "@movement/bik",
+      "label": "Bike",
+      "config": [
+         { "terrain": "@terrain/und", "fuel": 2 },
+         { "terrain": "@terrain/rur", "fuel": 1 },
+         { "terrain": "@terrain/sub", "fuel": 1 },
+         { "terrain": "@terrain/urb", "fuel": 2 },
+         { "terrain": "@terrain/for", "fuel": 3 }
+      ]
+   },
+   {
+      "id": "@movement/whe",
+      "label": "Wheel",
+      "config": [
+         { "terrain": "@terrain/und", "fuel": 1 },
+         { "terrain": "@terrain/rur", "fuel": 1 },
+         { "terrain": "@terrain/sub", "fuel": 1 },
+         { "terrain": "@terrain/urb", "fuel": 2 },
+         { "terrain": "@terrain/for", "fuel": 2 },
+         { "terrain": "@terrain/hil", "fuel": 3 }
+      ]
+   },
+   {
+      "id": "@movement/tre",
+      "label": "Tread",
+      "config": [
+         { "terrain": "@terrain/und", "fuel": 1 },
+         { "terrain": "@terrain/rur", "fuel": 1 },
+         { "terrain": "@terrain/sub", "fuel": 2 },
+         { "terrain": "@terrain/urb", "fuel": 3 },
+         { "terrain": "@terrain/for", "fuel": 3 },
+         { "terrain": "@terrain/hil", "fuel": 2 }
+      ]
+   }
+]
