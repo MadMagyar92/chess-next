@@ -1,4 +1,4 @@
-enum Key {
+export enum MetadataKey {
    DEFENSE = '@metadata/defense',
    MOVEMENT = '@metadata/movement',
    OFFENSE = '@metadata/offense',
@@ -6,7 +6,7 @@ enum Key {
    UNIT = '@metadata/unit',
 };
 
-enum Namespace {
+export enum MetadataNamespace {
    DEFENSE = '@defense',
    MOVEMENT = '@movement',
    OFFENSE = '@offense',
@@ -15,29 +15,29 @@ enum Namespace {
 };
 
 export type Metadata = {
-   key: Key;
-   namespace: Namespace;
+   key: MetadataKey;
+   namespace: MetadataNamespace;
 };
 
 export const METADATA: Metadata[] = [
    {
-      key: Key.DEFENSE,
-      namespace: Namespace.DEFENSE,
+      key: MetadataKey.DEFENSE,
+      namespace: MetadataNamespace.DEFENSE,
    },
    {
-      key: Key.MOVEMENT,
-      namespace: Namespace.MOVEMENT,
+      key: MetadataKey.MOVEMENT,
+      namespace: MetadataNamespace.MOVEMENT,
    },
    {
-      key: Key.OFFENSE,
-      namespace: Namespace.OFFENSE,
+      key: MetadataKey.OFFENSE,
+      namespace: MetadataNamespace.OFFENSE,
    },
    {
-      key: Key.TERRAIN,
-      namespace: Namespace.TERRAIN,
+      key: MetadataKey.TERRAIN,
+      namespace: MetadataNamespace.TERRAIN,
    },
    {
-      key: Key.UNIT,
-      namespace: Namespace.UNIT,
+      key: MetadataKey.UNIT,
+      namespace: MetadataNamespace.UNIT,
    },
 ];

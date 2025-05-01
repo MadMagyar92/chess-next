@@ -8,7 +8,7 @@ export {
 } from './config';
 
 export {
-   MetadataEntry, METADATA
+   Metadata, MetadataKey, MetadataNamespace, METADATA
 } from './metadata';
 
 export {

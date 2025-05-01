@@ -1,7 +1,7 @@
-import { Metadata } from "./metadata";
+import { Metadata } from "../metadata";
 
 type AppMetadataItem = {
-   key: Metadata;
+   metadata: Metadata;
    path: string;
 };
 
