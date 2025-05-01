@@ -1,8 +1,19 @@
-export { AppConfig } from './app/app.js';
-export { Metadata, IMetadata } from './app/metadata.js';
-export { IData, Id } from './app/data.js';
-export { Defense, DefenseMetadata } from './metadata/defense.js';
-export { Movement, MovementMetadata } from './metadata/movement.js';
-export { Offense, OffenseMetadata } from './metadata/offense.js';
-export { Terrain, TerrainMetadata } from './metadata/terrain.js';
-export { Unit, UnitMetadata } from './metadata/unit.js';
+export {
+   IAppConfig,
+   IData, IDataService, Id,
+   IMetadata, IMetadataConfig, IMetadataService, Metadata
+} from './app';
+
+export {
+   IGame, IGameTemplate,
+   ITerrain, ITerrainGrid,
+   IUnit, IUnitGrid
+} from './data';
+
+export {
+   DefenseMetadataType, DefenseMetadataCollection,
+   MovementMetadataType, MovementMetadataConfig,
+   OffenseMetadataType, OffenseMetadataCollection,
+   TerrainMetadataType, TerrainMetadataConfig,
+   UnitMetadataType, UnitMetadataConfig
+} from './metadata';

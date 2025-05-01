@@ -1,7 +1,7 @@
-import { IMetadata, Metadata } from "../app/metadata";
-import { Terrain } from "./terrain";
+import { IMetadataConfig } from "../app";
+import { TerrainMetadataType } from "./terrain";
 
-export enum SystemDefense {
+enum SystemDefense {
    INF = '@defense/inf',  // infantry
    SUP = '@defense/sup',  // support infantry
    ATV = '@defense/atv',  // all-terrain infantry
@@ -10,21 +10,19 @@ export enum SystemDefense {
    ARM = '@defense/arm'   // armor
 }
 
-export type CustomDefense = string;
-export type Defense = SystemDefense | CustomDefense;
+type CustomDefense = string;
+export type DefenseMetadataType = SystemDefense | CustomDefense;
 
-export type TerrainDefenseMetadataItem = {
-   terrain: Terrain;
+type TerrainDefenseMetadataItem = {
+   terrain: TerrainMetadataType;
    defense: number;
 };
 
-export type TerrainDefenseMetadata = TerrainDefenseMetadataItem[];
+type TerrainDefenseMetadata = TerrainDefenseMetadataItem[];
 
-export type DefenseMetadataItem = {
-   id: Defense;
+type DefenseMetadataItem = {
+   id: DefenseMetadataType;
    config: TerrainDefenseMetadata;
 };
 
-export class DefenseMetadata extends Array<DefenseMetadataItem> implements IMetadata {
-   type: Metadata.DEFENSE;
-}
+export type DefenseMetadataCollection = IMetadataConfig & DefenseMetadataItem[];

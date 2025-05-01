@@ -1,6 +1,5 @@
 export enum Metadata {
    ACTION = '@metadata/action',
-   CAPTURE = '@metadata/capture',
    DEFENSE = '@metadata/defense',
    MOVEMENT = '@metadata/movement',
    OFFENSE = '@metadata/offense',
@@ -10,4 +9,13 @@ export enum Metadata {
 
 export type IMetadata = {
    type: Metadata;
+};
+
+export type IMetadataConfig = {
+
+};
+
+export type IMetadataService<T extends IMetadataConfig> = {
+   type: Metadata;
+   config: T;
 };

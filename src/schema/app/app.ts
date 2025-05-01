@@ -1,13 +1,20 @@
 import { Metadata } from "./metadata";
 
-export type AppMetadataConfigItem = {
+type AppMetadataConfigItem = {
    metadata: Metadata;
    path: string;
 };
 
-export type AppMetadataConfig = AppMetadataConfigItem[];
+type AppDataConfigItem = {
+   data: Data;
+   path: string;
+};
 
-export type AppConfig = {
+type AppMetadataConfigCollection = AppMetadataConfigItem[];
+type AppDataConfigCollection = AppDataConfigItem[];
+
+export type IAppConfig = {
    name: string;
-   configs: AppMetadataConfig;
+   configs: AppMetadataConfigCollection;
+   data: AppDataConfigCollection;
 };

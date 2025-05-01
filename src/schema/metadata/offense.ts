@@ -1,7 +1,7 @@
-import { IMetadata, Metadata } from "../app/metadata";
-import { Unit } from "./unit";
+import { IMetadataConfig } from "../app";
+import { UnitMetadataType } from "./unit";
 
-export enum SystemOffense {
+enum SystemOffense {
    INF = '@offense/inf',  // rifle
    SUP = '@offense/sup',  // machine gun
    ATV = '@offense/atv',  // machine gun
@@ -10,22 +10,20 @@ export enum SystemOffense {
    ARM = '@offense/arm'   // cannon
 }
 
-export type CustomOffense = string;
-export type Offense = SystemOffense | CustomOffense;
+type CustomOffense = string;
+export type OffenseMetadataType = SystemOffense | CustomOffense;
 
-export type UnitDamageMetadataItem = {
-   unit: Unit;
+type UnitDamageMetadataItem = {
+   unit: UnitMetadataType;
    damage: number;
 };
 
-export type UnitDamageMetadata = UnitDamageMetadataItem[];
+type UnitDamageMetadata = UnitDamageMetadataItem[];
 
-export type OffenseMetadataItem = {
-   id: Offense;
+type OffenseMetadataItem = {
+   id: OffenseMetadataType;
    label: string;
    config: UnitDamageMetadata;
 };
 
-export class OffenseMetadata extends Array<OffenseMetadataItem> implements IMetadata {
-   type: Metadata.OFFENSE;
-}
+export type OffenseMetadataCollection = IMetadataConfig & OffenseMetadataItem[];

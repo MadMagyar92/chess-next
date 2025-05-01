@@ -9,31 +9,10 @@ const metadataMap = [
       config: getConfig()
    },
    {
-      metadata: Metadata.CAPTURE, 
-      config: getConfig()
-   },
-   {
       metadata: Metadata.UNIT, 
       config: getConfig()
    },
 ];
-
-interface MService<T> {
-   getType(): Metadata;
-   getConfig(): T;
-}
-
-interface TerrainService extends MService<TerrainMetadata> {
-   
-}
-
-interface CaptureService extends MService<CaptureConfig> {
-   
-}
-
-interface UnitService extends MService<UnitMetadata> {
-   
-}
 
 interface IConfigService {
    terrain(): ITerrainMetadataService;
@@ -67,4 +46,14 @@ export class CoreService implements ICoreService {
    game(): GameService {
       return this.gameService;
    }
+}
+
+interface ICoreHandler {
+   template(): GameTemplateService;
+   game(): GameService;
+}
+
+export class CoreHandler implements ICoreHandler {
+   private moveService: MoveService;
+
 }

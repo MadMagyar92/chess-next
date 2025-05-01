@@ -1,9 +1,9 @@
-import { Movement } from "./movement";
-import { Offense } from "./offense";
-import { Defense } from "./defense";
-import { IMetadata, Metadata } from "../app/metadata";
+import { MovementMetadataType } from "./movement";
+import { OffenseMetadataType } from "./offense";
+import { DefenseMetadataType } from "./defense";
+import { IMetadataConfig } from "../app";
 
-export enum SystemUnit {
+enum SystemUnit {
    INF = '@unit/inf',  // infantry
    SUP = '@unit/sup',  // support infantry
    ATV = '@unit/atv',  // all-terrain infantry
@@ -12,26 +12,24 @@ export enum SystemUnit {
    ARM = '@unit/arm'   // armor
 }
 
-export type CustomUnit = string;
-export type Unit = SystemUnit | CustomUnit;
+type CustomUnit = string;
+export type UnitMetadataType = SystemUnit | CustomUnit;
 
-export type UnitOffenseRange = {
+type UnitOffenseRange = {
    min: number;
    max: number;
 };
 
-export type UnitMetadataItem = {
-   id: Unit;
+type UnitMetadataItem = {
+   id: UnitMetadataType;
    label: string;
-   movement: Movement;
-   offense: Offense;
-   defense: Defense;
+   movement: MovementMetadataType;
+   offense: OffenseMetadataType;
+   defense: DefenseMetadataType;
    fuel: number;
    speed: number;
    ammo: number;
    range: UnitOffenseRange;
 };
 
-export class UnitMetadata extends Array<UnitMetadataItem> implements IMetadata {
-   type: Metadata.UNIT;
-}
+export type UnitMetadataConfig = IMetadataConfig & UnitMetadataItem[];

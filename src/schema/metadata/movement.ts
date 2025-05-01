@@ -1,29 +1,27 @@
-import { IMetadata, Metadata } from "../app/metadata";
-import { Terrain } from "./terrain";
+import { IMetadataConfig } from "../app/metadata";
+import { TerrainMetadataType } from "./terrain";
 
-export enum SystemMovement {
+enum SystemMovement {
    FOO = '@movement/foo',  // foot
    BIK = '@movement/bik',  // bike
    WHE = '@movement/whe',  // wheel
    TRE = '@movement/tre'   // tread
 }
 
-export type CustomMovement = string;
-export type Movement = SystemMovement | CustomMovement;
+type CustomMovement = string;
+export type MovementMetadataType = SystemMovement | CustomMovement;
 
-export type TerrainFuelConfigItem = {
-   terrain: Terrain;
+type TerrainFuelConfigItem = {
+   terrain: TerrainMetadataType;
    fuel: number;
 }
 
-export type TerrainFuelConfig = TerrainFuelConfigItem[];
+type TerrainFuelConfig = TerrainFuelConfigItem[];
 
-export type MovementMetadataItem = {
-   id: Movement;
+type MovementMetadataItem = {
+   id: MovementMetadataType;
    label: string;
    config: TerrainFuelConfig;
 }
 
-export class MovementMetadata extends Array<MovementMetadataItem> implements IMetadata {
-   type: Metadata.MOVEMENT;
-}
+export type MovementMetadataConfig = IMetadataConfig & MovementMetadataItem[];

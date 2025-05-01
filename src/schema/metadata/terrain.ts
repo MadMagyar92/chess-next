@@ -1,6 +1,6 @@
-import { IMetadata, Metadata } from "../app/metadata";
+import { IMetadata, IMetadataConfig, Metadata } from "../app/metadata";
 
-export enum SystemTerrain {
+enum SystemTerrain {
    UND = '@terrain/und', // undeveloped
    RUR = '@terrain/rur', // rural
    SUB = '@terrain/sub', // suburban
@@ -10,14 +10,12 @@ export enum SystemTerrain {
    MTN = '@terrain/mtn'  // mountains
 }
 
-export type CustomTerrain = string;
-export type Terrain = SystemTerrain | CustomTerrain;
+type CustomTerrain = string;
+export type TerrainMetadataType = SystemTerrain | CustomTerrain;
 
-export type TerrainMetadataItem = {
-   id: Terrain;
+type TerrainMetadataItem = {
+   id: TerrainMetadataType;
    label: string;
 };
 
-export class TerrainMetadata extends Array<TerrainMetadataItem> implements IMetadata {
-   type: Metadata.TERRAIN;
-}
+export type TerrainMetadataConfig = IMetadataConfig & TerrainMetadataItem[];
