@@ -1,30 +1,30 @@
 [
    {
-      "id": "@terrain/und",
+      "id": "und",
       "label": "Undeveloped"
    },
    {
-      "id": "@terrain/rur",
+      "id": "rur",
       "label": "Rural"
    },
    {
-      "id": "@terrain/sub",
+      "id": "sub",
       "label": "Suburban"
    },
    {
-      "id": "@terrain/urb",
+      "id": "urb",
       "label": "Urban"
    },
    {
-      "id": "@terrain/for",
+      "id": "for",
       "label": "Forest"
    },
    {
-      "id": "@terrain/hil",
+      "id": "hil",
       "label": "Hills"
    },
    {
-      "id": "@terrain/mtn",
+      "id": "mtn",
       "label": "Mountains"
    }
 ]

@@ -1,4 +1,14 @@
-import { IData, IMetadata, Id } from "../app";
+export type Id = number;
+
+export type IData = {
+   id: Id;
+};
+
+export type IDataService<T extends IData> = {
+   data: T[];
+};
+
+import { IData, IMetadata, Id } from "../metadata";
 
 export type IPosition = {
    x: number;

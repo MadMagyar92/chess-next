@@ -1,6 +1,6 @@
 [
    {
-      "id": "@unit/inf",
+      "id": "inf",
       "label": "Infantry",
       "movement": "@movement/foo",
       "offense": "@offense/inf",
@@ -11,7 +11,7 @@
       "range": { "min": 1, "max": 1 }
    },
    {
-      "id": "@unit/sup",
+      "id": "sup",
       "label": "Heavy Inf.",
       "movement": "@movement/foo",
       "offense": "@offense/sup",
@@ -22,7 +22,7 @@
       "range": { "min": 1, "max": 1 }
    },
    {
-      "id": "@unit/atv",
+      "id": "atv",
       "label": "ATV Inf.",
       "movement": "@movement/bik",
       "offense": "@offense/atv",
@@ -33,7 +33,7 @@
       "range": { "min": 1, "max": 1 }
    },
    {
-      "id": "@unit/utv",
+      "id": "utv",
       "label": "Utility",
       "movement": "@movement/whe",
       "offense": "@offense/utv",
@@ -44,7 +44,7 @@
       "range": { "min": 1, "max": 1 }
    },
    {
-      "id": "@unit/uav",
+      "id": "uav",
       "label": "Anti Utility",
       "movement": "@movement/whe",
       "offense": "@offense/uav",
@@ -55,7 +55,7 @@
       "range": { "min": 1, "max": 1 }
    },
    {
-      "id": "@unit/arm",
+      "id": "arm",
       "label": "Armor",
       "movement": "@movement/tre",
       "offense": "@offense/arm",
