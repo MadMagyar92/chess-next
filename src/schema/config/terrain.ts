@@ -1,8 +1,8 @@
-export type TerrainMetadataKey = string;
+export type TerrainConfigKey = string;
 
-type TerrainMetadataItem = {
-   id: TerrainMetadataKey;
+type TerrainConfigItem = {
+   id: TerrainConfigKey;
    label: string;
 };
 
-export type TerrainMetadata = TerrainMetadataItem[];
+export type TerrainConfig = TerrainConfigItem[];

@@ -2,23 +2,23 @@
    "name": "chess-next",
    "configs": [
       {
-         "metadata": "@metadata/defense",
+         "key": "@config/defense",
          "path": "./defense.config.json"
       },
       {
-         "metadata": "@metadata/movement",
+         "key": "@config/movement",
          "path": "./movement.config.json"
       },
       {
-         "metadata": "@metadata/offense",
+         "key": "@config/offense",
          "path": "./offense.config.json"
       },
       {
-         "metadata": "@metadata/terrain",
+         "key": "@config/terrain",
          "path": "./terrain.config.json"
       },
       {
-         "metadata": "@metadata/unit",
+         "key": "@config/unit",
          "path": "./unit.config.json"
       }
    ]

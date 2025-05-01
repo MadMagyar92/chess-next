@@ -1,30 +1,30 @@
 [
    {
-      "id": "und",
+      "key": "und",
       "label": "Undeveloped"
    },
    {
-      "id": "rur",
+      "key": "rur",
       "label": "Rural"
    },
    {
-      "id": "sub",
+      "key": "sub",
       "label": "Suburban"
    },
    {
-      "id": "urb",
+      "key": "urb",
       "label": "Urban"
    },
    {
-      "id": "for",
+      "key": "for",
       "label": "Forest"
    },
    {
-      "id": "hil",
+      "key": "hil",
       "label": "Hills"
    },
    {
-      "id": "mtn",
+      "key": "mtn",
       "label": "Mountains"
    }
 ]

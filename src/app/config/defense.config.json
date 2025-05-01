@@ -1,6 +1,6 @@
 [
    {
-      "id": "inf",
+      "key": "inf",
       "config": [
          { "terrain": "@terrain/und", "defense": 1 },
          { "terrain": "@terrain/rur", "defense": 0 },
@@ -12,7 +12,7 @@
       ]
    },
    {
-      "id": "sup",
+      "key": "sup",
       "config": [
          { "terrain": "@terrain/und", "defense": 1 },
          { "terrain": "@terrain/rur", "defense": 0 },
@@ -24,7 +24,7 @@
       ]
    },
    {
-      "id": "atv",
+      "key": "atv",
       "config": [
          { "terrain": "@terrain/und", "defense": 1 },
          { "terrain": "@terrain/rur", "defense": 0 },
@@ -34,7 +34,7 @@
       ]
    },
    {
-      "id": "utv",
+      "key": "utv",
       "config": [
          { "terrain": "@terrain/und", "defense": 0 },
          { "terrain": "@terrain/rur", "defense": 0 },
@@ -45,7 +45,7 @@
       ]
    },
    {
-      "id": "uav",
+      "key": "uav",
       "config": [
          { "terrain": "@terrain/und", "defense": 0 },
          { "terrain": "@terrain/rur", "defense": 0 },
@@ -56,7 +56,7 @@
       ]
    },
    {
-      "id": "arm",
+      "key": "arm",
       "config": [
          { "terrain": "@terrain/und", "defense": 0 },
          { "terrain": "@terrain/rur", "defense": 0 },

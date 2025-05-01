@@ -1,18 +1,16 @@
-import { UnitMetadataKey } from "./unit";
+import { UnitConfigKey } from "./unit";
 
-type OffenseMetadataConfigItem = {
-   unit: UnitMetadataKey;
+type OffenseConfigItemEntry = {
+   unit: UnitConfigKey;
    damage: number;
 };
 
-type OffenseMetadataConfig = OffenseMetadataConfigItem[];
+export type OffenseConfigKey = string;
 
-export type OffenseMetadataKey = string;
-
-type OffenseMetadataItem = {
-   id: OffenseMetadataKey;
+type OffenseConfigItem = {
+   key: OffenseConfigKey;
    label: string;
-   config: OffenseMetadataConfig;
+   config: OffenseConfigItemEntry[];
 };
 
-export type OffenseMetadata = OffenseMetadataItem[];
+export type OffenseConfig = OffenseConfigItem[];

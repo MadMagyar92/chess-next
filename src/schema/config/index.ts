@@ -1,6 +1,6 @@
-export { AppMetadata } from './app.js';
-export { DefenseMetadataKey, DefenseMetadata } from './defense.js';
-export { MovementMetadataKey, MovementMetadata } from './movement.js';
-export { OffenseMetadataKey, OffenseMetadata } from './offense.js';
-export { TerrainMetadataKey, TerrainMetadata } from './terrain.js';
-export { UnitMetadataKey, UnitMetadata } from './unit.js';
+export { AppConfig } from './app.js';
+export { DefenseConfigKey, DefenseConfig } from './defense.js';
+export { MovementConfigKey, MovementConfig } from './movement.js';
+export { OffenseConfigKey, OffenseConfig } from './offense.js';
+export { TerrainConfigKey, TerrainConfig } from './terrain.js';
+export { UnitConfigKey, UnitConfig } from './unit.js';

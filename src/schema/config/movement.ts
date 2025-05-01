@@ -1,18 +1,16 @@
-import { TerrainMetadataKey } from "./terrain";
+import { TerrainConfigKey } from "./terrain";
 
-type MovementMetadataConfigItem = {
-   terrain: TerrainMetadataKey;
+type MovementConfigItemEntry = {
+   terrain: TerrainConfigKey;
    fuel: number;
 };
 
-type MovementMetadataConfig = MovementMetadataConfigItem[];
+export type MovementConfigKey = string;
 
-export type MovementMetadataKey = string;
-
-type MovementMetadataItem = {
-   id: MovementMetadataKey;
+type MovementConfigItem = {
+   key: MovementConfigKey;
    label: string;
-   config: MovementMetadataConfig;
+   config: MovementConfigItemEntry[];
 };
 
-export type MovementMetadata = MovementMetadataItem[];
+export type MovementConfig = MovementConfigItem[];

@@ -1,17 +1,15 @@
-import { TerrainMetadataKey } from "./terrain";
+import { TerrainConfigKey } from "./terrain";
 
-type DefenseMetadataConfigItem = {
-   terrain: TerrainMetadataKey;
+type DefenseConfigItemEntry = {
+   terrain: TerrainConfigKey;
    defense: number;
 };
 
-type DefenseMetadataConfig = DefenseMetadataConfigItem[];
+export type DefenseConfigKey = string;
 
-export type DefenseMetadataKey = string;
-
-type DefenseMetadataItem = {
-   id: DefenseMetadataKey;
-   config: DefenseMetadataConfig;
+type DefenseConfigItem = {
+   key: DefenseConfigKey;
+   config: DefenseConfigItemEntry[];
 };
 
-export type DefenseMetadata = DefenseMetadataItem[];
+export type DefenseConfig = DefenseConfigItem[];

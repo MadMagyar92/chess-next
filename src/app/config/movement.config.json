@@ -1,6 +1,6 @@
 [
    {
-      "id": "foo",
+      "key": "foo",
       "label": "Foot",
       "config": [
          { "terrain": "@terrain/und", "fuel": 1 },
@@ -13,7 +13,7 @@
       ]
    },
    {
-      "id": "bik",
+      "key": "bik",
       "label": "Bike",
       "config": [
          { "terrain": "@terrain/und", "fuel": 2 },
@@ -24,7 +24,7 @@
       ]
    },
    {
-      "id": "whe",
+      "key": "whe",
       "label": "Wheel",
       "config": [
          { "terrain": "@terrain/und", "fuel": 1 },
@@ -36,7 +36,7 @@
       ]
    },
    {
-      "id": "tre",
+      "key": "tre",
       "label": "Tread",
       "config": [
          { "terrain": "@terrain/und", "fuel": 1 },
