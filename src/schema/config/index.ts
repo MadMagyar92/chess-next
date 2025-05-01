@@ -1,3 +1,4 @@
+export { AppMetadata } from './app.js';
 export { DefenseMetadataKey, DefenseMetadata } from './defense.js';
 export { MovementMetadataKey, MovementMetadata } from './movement.js';
 export { OffenseMetadataKey, OffenseMetadata } from './offense.js';
