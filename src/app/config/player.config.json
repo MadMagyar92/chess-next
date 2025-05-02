@@ -1,0 +1,27 @@
+[
+   {
+      "key": "inf",
+      "config": [
+         { "unit": "@unit/inf", "offense": 1.1, "defense": 1.1 },
+         { "unit": "@unit/sup", "offense": 1.1, "defense": 1.1 },
+         { "unit": "@unit/atv", "offense": 1.1, "defense": 1.1 },
+         { "unit": "@unit/arm", "offense": 0.9, "defense": 0.9 }
+      ]
+   },
+   {
+      "key": "utv",
+      "config": [
+         { "unit": "@unit/utv", "offense": 1.1, "defense": 1.1 },
+         { "unit": "@unit/uav", "offense": 1.1, "defense": 1.1 }
+      ]
+   },
+   {
+      "key": "arm",
+      "config": [
+         { "unit": "@unit/inf", "offense": 0.9, "defense": 0.9 },
+         { "unit": "@unit/sup", "offense": 0.9, "defense": 0.9 },
+         { "unit": "@unit/atv", "offense": 0.9, "defense": 0.9 },
+         { "unit": "@unit/arm", "offense": 1.1, "defense": 1.1 }
+      ]
+   }
+]

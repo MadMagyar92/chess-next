@@ -1,5 +1,5 @@
 import { InstanceKey } from '../../api';
-import { AppConfig } from '../config';
+import { AppConfig } from '../../schema';
 
 type AppInstanceItem = {
    key: InstanceKey;

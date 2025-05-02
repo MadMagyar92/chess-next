@@ -14,6 +14,10 @@
          "path": "./offense.config.json"
       },
       {
+         "key": "@config/player",
+         "path": "./player.config.json"
+      },
+      {
          "key": "@config/terrain",
          "path": "./terrain.config.json"
       },
@@ -30,10 +34,6 @@
       {
          "key": "@instance/map",
          "path": "./map.instance.json"
-      },
-      {
-         "key": "@instance/player",
-         "path": "./player.instance.json"
       }
    ]
 }
