@@ -1,3 +1,9 @@
 export {
-   Config, ConfigKey, ConfigNamespace, CONFIGS
+   IConfigService,
+   initConfigService
 } from './config.js';
+
+export {
+   IInstanceService,
+   initInstanceService
+} from './instance.js';

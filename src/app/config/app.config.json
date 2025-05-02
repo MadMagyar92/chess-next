@@ -21,5 +21,19 @@
          "key": "@config/unit",
          "path": "./unit.config.json"
       }
+   ],
+   "instances": [
+      {
+         "key": "@instance/game",
+         "path": "./game.instance.json"
+      },
+      {
+         "key": "@instance/map",
+         "path": "./map.instance.json"
+      },
+      {
+         "key": "@instance/player",
+         "path": "./player.instance.json"
+      }
    ]
 }
