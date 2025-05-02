@@ -1,11 +1,11 @@
-import { Metadata } from "../metadata";
+import { ConfigKey } from '../../api';
 
-type AppMetadataItem = {
-   metadata: Metadata;
+type AppConfigItem = {
+   key: ConfigKey;
    path: string;
 };
 
-export type AppMetadata = {
+export type AppConfig = {
    name: string;
-   configs: AppMetadataItem[];
+   configs: AppConfigItem[];
 };

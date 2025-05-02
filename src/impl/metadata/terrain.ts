@@ -1,4 +1,4 @@
-import { Metadata, TerrainMetadataConfig, TerrainMetadataType } from "../../schema";
+import { Metadata, TerrainMetadataConfig, TerrainMetadataType } from '../../schema';
 import { IMetadataService } from '../../api';
 
 export class TerrainMetadataService implements IMetadataService<TerrainMetadataConfig> {

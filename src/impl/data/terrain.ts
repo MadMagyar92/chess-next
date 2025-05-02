@@ -1,4 +1,4 @@
-import { Id, ITerrain, Metadata } from "../../schema";
+import { Id, ITerrain, Metadata } from '../../schema';
 
 export class TerrainImpl implements ITerrain {
    type = Metadata.TERRAIN;

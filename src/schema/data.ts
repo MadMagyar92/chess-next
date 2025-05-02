@@ -8,8 +8,6 @@ export type IDataService<T extends IData> = {
    data: T[];
 };
 
-import { IData, IMetadata, Id } from "../metadata";
-
 export type IPosition = {
    x: number;
    y: number;
@@ -22,7 +20,7 @@ export type IGrid<T extends IPosition> = IData & {
    grid: T[][];
 }
 
-export type IUnit = IData & IMetadata & IPosition & {
+export type IUnit = IData & IPosition & {
    gameId: Id;
    team: number;
    active: boolean;
@@ -32,7 +30,7 @@ export interface IUnitGrid extends IGrid<IUnit> {
 
 };
 
-export type ITerrain = IData & IMetadata & IPosition & {
+export type ITerrain = IData & IPosition & {
 
 };
 

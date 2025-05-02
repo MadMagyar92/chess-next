@@ -1,24 +1,24 @@
-import { MovementMetadataKey } from "./movement";
-import { OffenseMetadataKey } from "./offense";
-import { DefenseMetadataKey } from "./defense";
+import { MovementConfigKey } from './movement';
+import { OffenseConfigKey } from './offense';
+import { DefenseConfigKey } from './defense';
 
-export type UnitMetadataKey = string;
+export type UnitConfigKey = string;
 
 type Range = {
    min: number;
    max: number;
 };
 
-type UnitMetadataItem = {
-   id: UnitMetadataKey;
+type UnitConfigItem = {
+   key: UnitConfigKey;
    label: string;
-   movement: MovementMetadataKey;
-   offense: OffenseMetadataKey;
-   defense: DefenseMetadataKey;
+   movement: MovementConfigKey;
+   offense: OffenseConfigKey;
+   defense: DefenseConfigKey;
    fuel: number;
    speed: number;
    ammo: number;
    range: Range;
 };
 
-export type UnitMetadata = UnitMetadataItem[];
+export type UnitConfig = UnitConfigItem[];

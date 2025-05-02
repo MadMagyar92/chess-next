@@ -1,8 +1,8 @@
-import { IDataService, IGame, IUnit } from "../../schema";
-import { GameServiceImpl } from "../data/game";
-import { UnitServiceImpl } from "../data/unit";
-import { MoveServiceImpl } from "../runtime/move";
-// import { AttacServiceImpl } from "../runtime/attack";
+import { IDataService, IGame, IUnit } from '../../schema';
+import { GameServiceImpl } from '../data/game';
+import { UnitServiceImpl } from '../data/unit';
+import { MoveServiceImpl } from '../runtime/move';
+// import { AttacServiceImpl } from '../runtime/attack';
 
 const gameId = 1;
 const gameService: GameServiceImpl = new GameServiceImpl([]);

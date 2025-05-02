@@ -2,24 +2,38 @@
    "name": "chess-next",
    "configs": [
       {
-         "metadata": "@metadata/defense",
+         "key": "@config/defense",
          "path": "./defense.config.json"
       },
       {
-         "metadata": "@metadata/movement",
+         "key": "@config/movement",
          "path": "./movement.config.json"
       },
       {
-         "metadata": "@metadata/offense",
+         "key": "@config/offense",
          "path": "./offense.config.json"
       },
       {
-         "metadata": "@metadata/terrain",
+         "key": "@config/player",
+         "path": "./player.config.json"
+      },
+      {
+         "key": "@config/terrain",
          "path": "./terrain.config.json"
       },
       {
-         "metadata": "@metadata/unit",
+         "key": "@config/unit",
          "path": "./unit.config.json"
+      }
+   ],
+   "instances": [
+      {
+         "key": "@instance/game",
+         "path": "./game.instance.json"
+      },
+      {
+         "key": "@instance/map",
+         "path": "./map.instance.json"
       }
    ]
 }
