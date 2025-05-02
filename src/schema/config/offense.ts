@@ -1,4 +1,4 @@
-import { UnitConfigKey } from "./unit";
+import { UnitConfigKey } from './unit';
 
 type OffenseConfigItemEntry = {
    unit: UnitConfigKey;

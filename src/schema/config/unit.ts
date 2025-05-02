@@ -1,6 +1,6 @@
-import { MovementConfigKey } from "./movement";
-import { OffenseConfigKey } from "./offense";
-import { DefenseConfigKey } from "./defense";
+import { MovementConfigKey } from './movement';
+import { OffenseConfigKey } from './offense';
+import { DefenseConfigKey } from './defense';
 
 export type UnitConfigKey = string;
 
@@ -10,7 +10,7 @@ type Range = {
 };
 
 type UnitConfigItem = {
-   id: UnitConfigKey;
+   key: UnitConfigKey;
    label: string;
    movement: MovementConfigKey;
    offense: OffenseConfigKey;

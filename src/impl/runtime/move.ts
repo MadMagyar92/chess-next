@@ -1,4 +1,4 @@
-import { IPosition, IUnit } from "../../schema/data";
+import { IPosition, IUnit } from '../../schema/data';
 
 export type IMove = IPosition & {
    type: MovementMetadataType;
@@ -12,7 +12,7 @@ export interface IMoveService {
 
 export class MoveServiceImpl implements IMoveService {
    get(gameId: number, unit: IUnit, target: IPosition) {
-      throw new Error("Method not implemented.");
+      throw new Error('Method not implemented.');
    }
    
 }

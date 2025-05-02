@@ -1,4 +1,4 @@
-import { TerrainConfigKey } from "./terrain";
+import { TerrainConfigKey } from './terrain';
 
 type DefenseConfigItemEntry = {
    terrain: TerrainConfigKey;

@@ -1,7 +1,7 @@
 export type TerrainConfigKey = string;
 
 type TerrainConfigItem = {
-   id: TerrainConfigKey;
+   key: TerrainConfigKey;
    label: string;
 };
 

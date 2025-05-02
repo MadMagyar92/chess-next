@@ -1,5 +1,5 @@
-import { IUnit } from "../api";
-import { UnitMetadata } from "../schema";
+import { IUnit } from '../api';
+import { UnitMetadata } from '../schema';
 
 export class UnitImpl implements IUnit {
    private id: number;

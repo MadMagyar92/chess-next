@@ -1,5 +1,5 @@
-import { UnitMetadataType } from "../../schema";
-import { IPosition } from "../../schema/data";
+import { UnitMetadataType } from '../../schema';
+import { IPosition } from '../../schema/data';
 
 export type IAttack = IPosition & {
    type: UnitMetadataType;
@@ -12,7 +12,7 @@ export interface IAttackService {
 
 export class AttackServiceImpl implements IAttackService {
    get(gameId: number, target: IPosition): IAttack | undefined {
-      throw new Error("Method not implemented.");
+      throw new Error('Method not implemented.');
    }
    
 }

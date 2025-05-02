@@ -1,4 +1,4 @@
-import { ConfigKey } from "../config";
+import { ConfigKey } from '../../api';
 
 type AppConfigItem = {
    key: ConfigKey;

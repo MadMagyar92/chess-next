@@ -1,5 +1,5 @@
-import { Id, IUnit, Metadata } from "../../schema";
-import { IDataService } from "../../schema/app";
+import { Id, IUnit, Metadata } from '../../schema';
+import { IDataService } from '../../schema/config';
 
 export class UnitServiceImpl implements IDataService<IUnit> {
    data: IUnit[];

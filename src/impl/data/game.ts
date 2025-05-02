@@ -1,4 +1,4 @@
-import { Id, IDataService, IGame, ITerrainGrid, IUnitGrid } from "../../schema";
+import { Id, IDataService, IGame, ITerrainGrid, IUnitGrid } from '../../schema';
 
 export class GameServiceImpl implements IDataService<IGame> {
    data: IGame[];

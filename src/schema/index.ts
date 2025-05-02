@@ -1,18 +1,19 @@
 export {
-   AppMetadata,
-   DefenseMetadataKey, DefenseMetadata,
-   MovementMetadataKey, MovementMetadata,
-   OffenseMetadataKey, OffenseMetadata,
-   TerrainMetadataKey, TerrainMetadata,
-   UnitMetadataKey, UnitMetadata
+   AppConfig,
+   DefenseConfigKey, DefenseConfig,
+   MovementConfigKey, MovementConfig,
+   OffenseConfigKey, OffenseConfig,
+   TerrainConfigKey, TerrainConfig,
+   UnitConfigKey, UnitConfig
 } from './config';
-
-export {
-   Metadata, MetadataKey, MetadataNamespace, METADATA
-} from './metadata';
 
 export {
    IGame, IGameTemplate,
    ITerrain, ITerrainGrid,
    IUnit, IUnitGrid
 } from './data';
+
+export {
+   AppInstance,
+   GameInstanceKey, GameInstance
+} from './instance';

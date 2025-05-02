@@ -1,4 +1,4 @@
-import { Metadata, MovementMetadataType, UnitMetadataConfig, UnitMetadataType } from "../../schema";
+import { Metadata, MovementMetadataType, UnitMetadataConfig, UnitMetadataType } from '../../schema';
 import { IMetadataService } from '../../api';
 
 export class UnitMetadataService implements IMetadataService<UnitMetadataConfig> {
