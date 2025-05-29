@@ -1,6 +1,6 @@
 export type TerrainConfigKey = string;
 
-type TerrainConfigItem = {
+export type TerrainConfigItem = {
    key: TerrainConfigKey;
    label: string;
 };

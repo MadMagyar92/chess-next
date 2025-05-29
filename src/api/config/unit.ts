@@ -9,7 +9,7 @@ type Range = {
    max: number;
 };
 
-type UnitConfigItem = {
+export type UnitConfigItem = {
    key: UnitConfigKey;
    label: string;
    movement: MovementConfigKey;

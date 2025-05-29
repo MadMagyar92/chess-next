@@ -7,10 +7,10 @@ type MovementConfigItemEntry = {
 
 export type MovementConfigKey = string;
 
-type MovementConfigItem = {
+export type MovementConfigItem = {
    key: MovementConfigKey;
    label: string;
-   config: MovementConfigItemEntry[];
+   fuel: MovementConfigItemEntry[];
 };
 
 export type MovementConfig = MovementConfigItem[];

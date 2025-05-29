@@ -7,9 +7,10 @@ type DefenseConfigItemEntry = {
 
 export type DefenseConfigKey = string;
 
-type DefenseConfigItem = {
+export type DefenseConfigItem = {
    key: DefenseConfigKey;
-   config: DefenseConfigItemEntry[];
+   label: string;
+   defense: DefenseConfigItemEntry[];
 };
 
 export type DefenseConfig = DefenseConfigItem[];

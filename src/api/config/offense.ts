@@ -7,10 +7,10 @@ type OffenseConfigItemEntry = {
 
 export type OffenseConfigKey = string;
 
-type OffenseConfigItem = {
+export type OffenseConfigItem = {
    key: OffenseConfigKey;
    label: string;
-   config: OffenseConfigItemEntry[];
+   damage: OffenseConfigItemEntry[];
 };
 
 export type OffenseConfig = OffenseConfigItem[];

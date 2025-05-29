@@ -1,0 +1,39 @@
+{
+   "name": "chess-next",
+   "config": [
+      {
+         "key": "@config/defense",
+         "path": "./config/defense.json"
+      },
+      {
+         "key": "@config/movement",
+         "path": "./config/movement.json"
+      },
+      {
+         "key": "@config/offense",
+         "path": "./config/offense.json"
+      },
+      {
+         "key": "@config/player",
+         "path": "./config/player.json"
+      },
+      {
+         "key": "@config/terrain",
+         "path": "./config/terrain.json"
+      },
+      {
+         "key": "@config/unit",
+         "path": "./config/unit.json"
+      }
+   ],
+   "data": [
+      {
+         "key": "@data/game",
+         "path": "./data/game.json"
+      },
+      {
+         "key": "@data/map",
+         "path": "./data/map.json"
+      }
+   ]
+}

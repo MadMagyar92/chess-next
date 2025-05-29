@@ -1,5 +1,5 @@
 import { MovementMetadataConfig, MovementMetadataType, TerrainMetadataType } from '../../schema';
-import { IMetadataService, Metadata } from '../../schema/config';
+import { IMetadataService, Metadata } from '../../api/config';
 
 export class MovementMetadataService implements IMetadataService<MovementMetadataConfig> {
    type = Metadata.MOVEMENT;

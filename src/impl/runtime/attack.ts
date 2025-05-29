@@ -1,5 +1,5 @@
 import { UnitMetadataType } from '../../schema';
-import { IPosition } from '../../schema/data';
+import { IPosition } from '../../api/data';
 
 export type IAttack = IPosition & {
    type: UnitMetadataType;

@@ -1,4 +1,4 @@
-import { IPosition, IUnit } from '../../schema/data';
+import { IPosition, IUnit } from '../../api/data';
 
 export type IMove = IPosition & {
    type: MovementMetadataType;

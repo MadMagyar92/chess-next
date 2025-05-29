@@ -8,9 +8,10 @@ type PlayerConfigItemEntry = {
 
 export type PlayerConfigKey = string;
 
-type PlayerConfigItem = {
+export type PlayerConfigItem = {
    key: PlayerConfigKey;
-   config: PlayerConfigItemEntry[];
+   label: string;
+   bonus: PlayerConfigItemEntry[];
 };
 
 export type PlayerConfig = PlayerConfigItem[];
